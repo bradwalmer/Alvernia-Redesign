@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="An AI 101 student redesign of Alvernia's Logins page, grouped by what a first-year student needs to do. A classroom prototype, not an official page.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Student logins · Campus Resource Studio</title>
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script src="logins.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="prototype-bar"><span>AI 101 · STUDENT DESIGN LAB</span><span>A classroom prototype · <a href="https://www.alvernia.edu/" target="_blank" rel="noopener">Official Alvernia website ↗</a></span></div>
+<header class="site-header">
+<a class="brand" href="index.html" aria-label="Alvernia Campus Explorer home"><img src="assets/logo.svg" alt="Alvernia University" width="196" height="74"></a>
+<button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu ☰</button>
+<nav id="main-nav" aria-label="Main navigation"><a href="index.html#discover">Our locations</a><a href="index.html#explore">Campus map</a><a href="logins.html" aria-current="page">Student logins</a><a href="index.html#studio">AI Center studio</a><a href="index.html#lab">Your challenge</a></nav>
+</header>
+<main id="main" class="logins-page">
+<div class="logins-hero"><div class="wrap">
+<p class="eyebrow">FIND YOUR SYSTEM</p>
+<h1>Student logins</h1>
+<p class="logins-intro">Search by what you need to do, then go straight to the login.</p>
+<div class="logins-controls">
+<label class="logins-search" for="logins-filter">Find a system or task
+<input id="logins-filter" type="search" autocomplete="off" placeholder="Try “grades”, “housing”, or “email”"></label>
+<div class="filter-row logins-audience" role="group" aria-label="Show systems for">
+<button type="button" class="filter" data-audience="all" aria-pressed="false">All</button>
+<button type="button" class="filter active" data-audience="students" aria-pressed="true">Students</button>
+<button type="button" class="filter" data-audience="faculty" aria-pressed="false">Faculty/Staff</button>
+</div>
+</div>
+<p class="logins-notice"><strong>Student prototype, not an official Alvernia page.</strong> It never asks for your password. Links go to the destinations on <a href="https://www.alvernia.edu/logins" target="_blank" rel="noopener">Alvernia’s official Logins page<span class="sr-only"> (opens in a new tab)</span> ↗</a>, checked November 5, 2026.</p>
+</div></div>
+<div class="wrap logins-body">
+<p class="logins-count" id="logins-count" role="status"></p>
+<div id="logins-empty" class="logins-empty" hidden><p id="logins-empty-text"></p><button type="button" class="button outline compact" id="logins-reset">Reset search and show Students</button></div>
+<div id="logins-groups"></div>
+<noscript><p class="noscript">JavaScript is required to list systems on this page. <a href="https://www.alvernia.edu/logins">Use Alvernia’s official Logins page.</a></p></noscript>
+<section class="logins-help" aria-labelledby="logins-help-title">
+<h2 id="logins-help-title">Can’t get in?</h2>
+<p>For urgent password resets, account unlocks, or compromised accounts, the IT Help Desk lists <a href="tel:+16102305700">610-230-5700</a> (x2008 on campus). For non-urgent requests, use the <a href="https://alvernia.topdesk.net/" target="_blank" rel="noopener">TOPdesk Self-Service Portal<span class="sr-only"> (opens in a new tab)</span> ↗</a>. Details come from <a href="https://www.alvernia.edu/current-students/technology-support" target="_blank" rel="noopener">Technology Support<span class="sr-only"> (opens in a new tab)</span> ↗</a>. Confirm them there before relying on them.</p>
+</section>
+<section class="logins-sources" aria-labelledby="logins-sources-title">
+<h2 id="logins-sources-title">About this page</h2>
+<p>Groups and one-line descriptions are student-written and have not been reviewed by Alvernia IT. Descriptions come only from the official sources below. “Description not confirmed yet” means we found no official description, so we didn’t guess.</p>
+<ul>
+<li><a href="https://www.alvernia.edu/logins" target="_blank" rel="noopener">Logins<span class="sr-only"> (opens in a new tab)</span> ↗</a>: system names, audiences, and every link</li>
+<li><a href="https://www.alvernia.edu/sites/default/files/documents/New%20Student%20Summer%20Newsletter%20-%20Edition%20Nine.pdf" target="_blank" rel="noopener">New Student Summer Newsletter, Edition Nine<span class="sr-only"> (opens in a new tab)</span> ↗</a>: Canvas, Self-Service, Outlook email</li>
+<li><a href="https://www.alvernia.edu/current-students/registrar/registrar-transcripts" target="_blank" rel="noopener">Registrar transcripts<span class="sr-only"> (opens in a new tab)</span> ↗</a>: unofficial transcripts in Self-Service</li>
+<li><a href="https://www.alvernia.edu/student-experience/office-career-development" target="_blank" rel="noopener">Office of Career Development<span class="sr-only"> (opens in a new tab)</span> ↗</a>: Handshake</li>
+<li><a href="https://catalog.alvernia.edu/content.php?catoid=4&amp;navoid=55" target="_blank" rel="noopener">2026–2027 Undergraduate Catalog, University Life<span class="sr-only"> (opens in a new tab)</span> ↗</a>: Omnilert</li>
+<li><a href="https://www.alvernia.edu/alvernia-shuttle-services" target="_blank" rel="noopener">Shuttle Services<span class="sr-only"> (opens in a new tab)</span> ↗</a>: shuttle</li>
+</ul>
+</section>
+</div>
+</main>
+<footer><div class="wrap footer-top"><div><img src="assets/logo-white.svg" alt="Alvernia University" width="210"><p>Campus Resource Studio<br><span>AI 101 · Learn by building for others.</span></p></div><div><h3>Explore</h3><a href="index.html#explore">Campus map</a><a href="index.html#studio">AI Center studio</a><a href="index.html#lab">Student challenge</a></div><div><h3>Keep learning</h3><a href="https://www.alvernia.edu/logins" target="_blank" rel="noopener">Official Logins page ↗</a><a href="README.md">Project instructions</a><a href="SOURCES.md">Sources &amp; image credits</a></div></div><div class="wrap footer-bottom"><p>Educational redesign · not the official Alvernia website. University photos and marks © Alvernia University.</p><p>Logins checked November 5, 2026.</p></div></footer>
+</body></html>
